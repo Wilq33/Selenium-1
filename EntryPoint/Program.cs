@@ -37,6 +37,7 @@ class EntryPoint
     {
         Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine(message);
+        Console.ForegroundColor = ConsoleColor.White;
     }
     
     //changing color to green
@@ -44,6 +45,7 @@ class EntryPoint
     {
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine(message);
+        Console.ForegroundColor = ConsoleColor.White;
     }
 }
 
