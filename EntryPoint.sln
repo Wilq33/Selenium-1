@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntryPoint", "EntryPoint\EntryPoint.csproj", "{48D07D39-D679-4B8F-A363-FE672C9DFE84}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameSelector", "EntryPoint\NameSelector.csproj", "{48D07D39-D679-4B8F-A363-FE672C9DFE84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdSelector", "IdSelector\IdSelector.csproj", "{5C103D58-7BFF-4B3E-81EB-5BDEA57B4277}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{48D07D39-D679-4B8F-A363-FE672C9DFE84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48D07D39-D679-4B8F-A363-FE672C9DFE84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48D07D39-D679-4B8F-A363-FE672C9DFE84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C103D58-7BFF-4B3E-81EB-5BDEA57B4277}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C103D58-7BFF-4B3E-81EB-5BDEA57B4277}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C103D58-7BFF-4B3E-81EB-5BDEA57B4277}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C103D58-7BFF-4B3E-81EB-5BDEA57B4277}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

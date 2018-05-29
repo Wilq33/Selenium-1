@@ -1,0 +1,12 @@
+E:\Selenium course\EntryPoint\EntryPoint\bin\Debug\EntryPoint.exe.config
+E:\Selenium course\EntryPoint\EntryPoint\bin\Debug\EntryPoint.exe
+E:\Selenium course\EntryPoint\EntryPoint\bin\Debug\EntryPoint.pdb
+E:\Selenium course\EntryPoint\EntryPoint\bin\Debug\WebDriver.dll
+E:\Selenium course\EntryPoint\EntryPoint\bin\Debug\WebDriver.Support.dll
+E:\Selenium course\EntryPoint\EntryPoint\bin\Debug\WebDriver.xml
+E:\Selenium course\EntryPoint\EntryPoint\bin\Debug\WebDriver.Support.xml
+E:\Selenium course\EntryPoint\EntryPoint\obj\Debug\NameSelector.csprojAssemblyReference.cache
+E:\Selenium course\EntryPoint\EntryPoint\obj\Debug\NameSelector.csproj.CoreCompileInputs.cache
+E:\Selenium course\EntryPoint\EntryPoint\obj\Debug\NameSelector.csproj.CopyComplete
+E:\Selenium course\EntryPoint\EntryPoint\obj\Debug\EntryPoint.exe
+E:\Selenium course\EntryPoint\EntryPoint\obj\Debug\EntryPoint.pdb

@@ -4,7 +4,7 @@ using System;
 using System.Diagnostics;
 using System.Threading;
 
-class NameSelector
+class Program
     {
 
     //Checking if element myName exists
