@@ -12,7 +12,7 @@ namespace IdSelector
         static void Main()
         {
             string idSelector = "http://testing.todvachev.com/selectors/id/";
-            string ID = "testImagee";
+            string ID = "testImage";
 
             IWebDriver driver = new ChromeDriver();
 
@@ -20,7 +20,14 @@ namespace IdSelector
 
             IWebElement element = driver.FindElement(By.Id(ID));
 
-            Console.WriteLine(element.Text);
+            if(element.Displayed)
+            {
+                GreenMessage("Yes, I can see the image");
+            }
+            else
+            {
+                RedMessage("I don't see the image");
+            }
 
             Thread.Sleep(3000);
             driver.Quit();

@@ -18,33 +18,10 @@ namespace ClassName
 
             IWebElement element = driver.FindElement(By.ClassName(name));
 
-            if (element.Displayed)
-            {
-                GreenMessage("Yes, I see it");
-            }
-            else
-            {
-                RedMessage("No, I don't see it");
-            }
+            Console.WriteLine(element.Text);
 
             Thread.Sleep(3000);
             driver.Quit();
-        }
-
-        //changing color to red
-        private static void RedMessage(string message)
-        {
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine(message);
-            Console.ForegroundColor = ConsoleColor.White;
-        }
-
-        //changing color to green
-        private static void GreenMessage(string message)
-        {
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine(message);
-            Console.ForegroundColor = ConsoleColor.White;
         }
 
     }
