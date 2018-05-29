@@ -4,7 +4,7 @@ using System;
 
 namespace IdSelector
 {
-    class Program
+    class ID
     {
 
         //Navigating to website
