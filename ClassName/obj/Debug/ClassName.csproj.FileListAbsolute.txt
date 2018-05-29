@@ -1,0 +1,12 @@
+E:\Selenium course\EntryPoint\ClassName\bin\Debug\ClassName.exe.config
+E:\Selenium course\EntryPoint\ClassName\bin\Debug\ClassName.exe
+E:\Selenium course\EntryPoint\ClassName\bin\Debug\ClassName.pdb
+E:\Selenium course\EntryPoint\ClassName\bin\Debug\WebDriver.dll
+E:\Selenium course\EntryPoint\ClassName\bin\Debug\WebDriver.Support.dll
+E:\Selenium course\EntryPoint\ClassName\bin\Debug\WebDriver.xml
+E:\Selenium course\EntryPoint\ClassName\bin\Debug\WebDriver.Support.xml
+E:\Selenium course\EntryPoint\ClassName\obj\Debug\ClassName.csprojAssemblyReference.cache
+E:\Selenium course\EntryPoint\ClassName\obj\Debug\ClassName.csproj.CoreCompileInputs.cache
+E:\Selenium course\EntryPoint\ClassName\obj\Debug\ClassName.csproj.CopyComplete
+E:\Selenium course\EntryPoint\ClassName\obj\Debug\ClassName.exe
+E:\Selenium course\EntryPoint\ClassName\obj\Debug\ClassName.pdb

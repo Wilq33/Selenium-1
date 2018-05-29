@@ -1,6 +1,7 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
+using System.Threading;
 
 namespace IdSelector
 {
@@ -11,7 +12,7 @@ namespace IdSelector
         static void Main()
         {
             string idSelector = "http://testing.todvachev.com/selectors/id/";
-            string ID = "testImage";
+            string ID = "testImagee";
 
             IWebDriver driver = new ChromeDriver();
 
@@ -19,15 +20,9 @@ namespace IdSelector
 
             IWebElement element = driver.FindElement(By.Id(ID));
 
-            if(element.Displayed)
-            {
-                GreenMessage("Yes, I can see the image");
-            }
-            else
-            {
-                RedMessage("I don't see the image");
-            }
+            Console.WriteLine(element.Text);
 
+            Thread.Sleep(3000);
             driver.Quit();
         }
         //changing color to red

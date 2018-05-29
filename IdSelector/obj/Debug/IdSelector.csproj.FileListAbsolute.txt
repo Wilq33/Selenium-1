@@ -1,0 +1,12 @@
+E:\Selenium course\EntryPoint\IdSelector\bin\Debug\IdSelector.exe.config
+E:\Selenium course\EntryPoint\IdSelector\bin\Debug\IdSelector.exe
+E:\Selenium course\EntryPoint\IdSelector\bin\Debug\IdSelector.pdb
+E:\Selenium course\EntryPoint\IdSelector\bin\Debug\WebDriver.dll
+E:\Selenium course\EntryPoint\IdSelector\bin\Debug\WebDriver.Support.dll
+E:\Selenium course\EntryPoint\IdSelector\bin\Debug\WebDriver.xml
+E:\Selenium course\EntryPoint\IdSelector\bin\Debug\WebDriver.Support.xml
+E:\Selenium course\EntryPoint\IdSelector\obj\Debug\IdSelector.csprojAssemblyReference.cache
+E:\Selenium course\EntryPoint\IdSelector\obj\Debug\IdSelector.csproj.CoreCompileInputs.cache
+E:\Selenium course\EntryPoint\IdSelector\obj\Debug\IdSelector.csproj.CopyComplete
+E:\Selenium course\EntryPoint\IdSelector\obj\Debug\IdSelector.exe
+E:\Selenium course\EntryPoint\IdSelector\obj\Debug\IdSelector.pdb
