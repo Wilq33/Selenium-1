@@ -2,6 +2,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
 using System.Diagnostics;
+using System.Threading;
 
 class EntryPoint
     {
@@ -26,17 +27,23 @@ class EntryPoint
             RedMessage("I don't see the element");
           }
 
+        Thread.Sleep(3000);
         driver.Quit();
         }
 
-    private static void RedMessage(string v)
-    {
-        
-    }
 
-    private static void GreenMessage(string v)
+    //changing color to red
+    private static void RedMessage(string message)
     {
-        
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine(message);
+    }
+    
+    //changing color to green
+    private static void GreenMessage(string message)
+    {
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine(message);
     }
 }
 
