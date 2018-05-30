@@ -2,6 +2,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
 using System.Diagnostics;
+using System.Threading;
 
 class Test
 {
@@ -39,10 +40,26 @@ class Test
         }
         catch (NoSuchElementException)
         {
-            GreenMessage("I don't see the ID element");
+            RedMessage("I don't see the ID element");
         }
 
+        Thread.Sleep(1000);
 
+        try
+        {
+            elementCssPath = driver.FindElement(By.Id(cssPathSelector));
+
+            if (elementCssPath.Displayed)
+            {
+                GreenMessage("I can see the ID element");
+                Console.WriteLine(elementCssPath.Text);
+            }
+
+        }
+        catch (NoSuchElementException)
+        {
+            RedMessage("I don't see the ID element");
+        }
 
 
     }
