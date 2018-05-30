@@ -7,6 +7,7 @@ class Test
 {
     static void Main()
     {
+        //tested urls
         string urlName = "http://testing.todvachev.com/selectors/name/";
         string urlSelectable = "http://demoqa.com/selectable/";
         string urlMenu = "http://demoqa.com/menu/";
@@ -15,7 +16,7 @@ class Test
         string nameSelector = "myName";
         string idSelector = "nav_menu-2";
         string cssPathSelector = "#post-41 > header > h1";
-        string xPathSelector = "";
+        string xPathSelector = "//*[@id=\"breadcrumbs\"]/li[1]/a";
 
         IWebDriver driver = new ChromeDriver();
 
@@ -24,7 +25,7 @@ class Test
         IWebElement elementName;
         IWebElement elementId;
         IWebElement elementCssPath;
-        //IWebElement elementXPath = driver.FindElement(By.XPath(xPathSelector));
+        IWebElement elementXPath;
 
 
         driver.Navigate().GoToUrl(urlName);
@@ -80,7 +81,23 @@ class Test
             RedMessage("I don't see the CssPath element");
         }
 
+        driver.Navigate().GoToUrl(urlMenu);
 
+        try
+        {
+            elementXPath = driver.FindElement(By.XPath(xPathSelector));
+
+            if (elementXPath.Displayed)
+            {
+                GreenMessage("I can see the XPath element");
+                Console.WriteLine(elementXPath.Text);
+            }
+
+        }
+        catch (NoSuchElementException)
+        {
+            RedMessage("I don't see the XPath element");
+        }
 
         driver.Quit();
     }

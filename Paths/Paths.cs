@@ -49,8 +49,6 @@ namespace Paths
                 GreenMessage("I can see XPath");
             }
             
-
-
             driver.Quit();
         }
 
