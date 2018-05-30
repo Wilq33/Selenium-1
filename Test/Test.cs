@@ -1,17 +1,18 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
-using System.Diagnostics;
 using System.Threading;
 
 class Test
 {
     static void Main()
     {
-        string url = "http://demoqa.com/selectable/";
+        string urlName = "http://testing.todvachev.com/selectors/name/";
+        string urlSelectable = "http://demoqa.com/selectable/";
+        string urlMenu = "http://demoqa.com/menu/";
 
         //Selectors
-        string nameSelector = "";
+        string nameSelector = "myName";
         string idSelector = "nav_menu-2";
         string cssPathSelector = "#post-41 > header > h1";
         string xPathSelector = "";
@@ -20,12 +21,30 @@ class Test
 
 
         //Elements
-        //IWebElement elementName = driver.FindElement(By.Name(nameSelector));
+        IWebElement elementName;
         IWebElement elementId;
         IWebElement elementCssPath;
         //IWebElement elementXPath = driver.FindElement(By.XPath(xPathSelector));
 
-        driver.Navigate().GoToUrl(url);
+
+        driver.Navigate().GoToUrl(urlName);
+
+        try
+        {
+            elementName = driver.FindElement(By.Name(nameSelector));
+
+            if (elementName.Displayed)
+            {
+                GreenMessage("I can see the name element");
+            }
+
+        }
+        catch (NoSuchElementException)
+        {
+            RedMessage("I don't see the name element");
+        }
+
+        driver.Navigate().GoToUrl(urlSelectable);
 
         try
         {
@@ -34,7 +53,7 @@ class Test
             if (elementId.Displayed)
             {
                 GreenMessage("I can see the ID element");
-                Debug.WriteLine(elementId.Text);
+                Console.WriteLine(elementId.Text);
             }
            
         }
@@ -47,21 +66,23 @@ class Test
 
         try
         {
-            elementCssPath = driver.FindElement(By.Id(cssPathSelector));
+            elementCssPath = driver.FindElement(By.CssSelector(cssPathSelector));
 
             if (elementCssPath.Displayed)
             {
-                GreenMessage("I can see the ID element");
+                GreenMessage("I can see the CssPath element");
                 Console.WriteLine(elementCssPath.Text);
             }
 
         }
         catch (NoSuchElementException)
         {
-            RedMessage("I don't see the ID element");
+            RedMessage("I don't see the CssPath element");
         }
 
 
+
+        driver.Quit();
     }
 
     
