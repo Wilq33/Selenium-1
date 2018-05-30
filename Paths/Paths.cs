@@ -4,11 +4,13 @@ using System;
 
 namespace Paths
 {
-    class Program
+    class Paths
     {
         static void Main()
         {
             string url = "http://testing.todvachev.com/selectors/css-path/";
+            //Incorrect selector to check if RedMessage is displayed
+            //string cssPathSelector = "#post-108 > div > figure > imga"; 
             string cssPathSelector = "#post-108 > div > figure > img";
             string xPathSelector = "//*[@id=\"post-108\"]/div/figure/img";
 
