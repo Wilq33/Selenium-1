@@ -22,7 +22,7 @@ class Test
         //Elements
         //IWebElement elementName = driver.FindElement(By.Name(nameSelector));
         IWebElement elementId;
-        IWebElement elementCssPath = driver.FindElement(By.CssSelector(cssPathSelector));
+        IWebElement elementCssPath;
         //IWebElement elementXPath = driver.FindElement(By.XPath(xPathSelector));
 
         driver.Navigate().GoToUrl(url);
