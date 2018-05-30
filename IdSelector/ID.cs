@@ -18,13 +18,20 @@ namespace IdSelector
 
             driver.Navigate().GoToUrl(idSelector);
 
-            IWebElement element = driver.FindElement(By.Id(ID));
+            IWebElement element;
 
-            if(element.Displayed)
+
+            try
             {
-                GreenMessage("Yes, I can see the image");
+                element = driver.FindElement(By.Id(ID));
+
+                if (element.Displayed)
+                {
+                    GreenMessage("Yes, I can see the image");
+                }
+            
             }
-            else
+            catch(NoSuchElementException)
             {
                 RedMessage("I don't see the image");
             }

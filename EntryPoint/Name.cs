@@ -14,18 +14,25 @@ class NameSelector
 
         driver.Navigate().GoToUrl("http://testing.todvachev.com/selectors/name/");
 
-        IWebElement element = driver.FindElement(By.Name("myName"));
+        IWebElement element;
 
-        if (element.Displayed)
-          {
-            GreenMessage("Yes, I can see the element");
-            //Debug.WriteLine("Yes, I can see the element");
-            //System.Console.WriteLine("Yes, I can see the element");
+
+        try
+        {
+            element = driver.FindElement(By.Name("myName"));
+
+            if (element.Displayed)
+            {
+                GreenMessage("Yes, I can see the element");
+                //Debug.WriteLine("Yes, I can see the element");
+                //System.Console.WriteLine("Yes, I can see the element");
+            }
         }
-        else
-          {
+        catch (NoSuchElementException)
+        {
             RedMessage("I don't see the element");
-          }
+        }
+        
 
         Thread.Sleep(3000);
         driver.Quit();

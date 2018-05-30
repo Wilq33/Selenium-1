@@ -18,26 +18,35 @@ namespace Paths
 
 
             //Elements
-            IWebElement cssPathElement = driver.FindElement(By.CssSelector(cssPathSelector));
-            IWebElement xPathElement = driver.FindElement(By.XPath(xPathSelector));
+            IWebElement cssPathElement;
+            IWebElement xPathElement;
 
-            if (cssPathElement.Displayed)
+            try
             {
-                GreenMessage("I can see CssPath");
-            }
-            else
+                cssPathElement = driver.FindElement(By.CssSelector(cssPathSelector));
+                if (cssPathElement.Displayed)
+                {
+                    GreenMessage("I can see CssPath");
+                }
+                            }
+            catch(NoSuchElementException)
             {
                 RedMessage("I don't see CssPath");
             }
 
-            if(xPathElement.Displayed)
+            try
+            {
+                xPathElement = driver.FindElement(By.XPath(xPathSelector));
+                if (xPathElement.Displayed)
+                {
+                    GreenMessage("I can see XPath");
+                }
+            }
+            catch (NoSuchElementException)
             {
                 GreenMessage("I can see XPath");
             }
-            else
-            {
-                RedMessage("I don't see XPath");
-            }
+            
 
 
             driver.Quit();
