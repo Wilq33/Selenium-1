@@ -1,0 +1,12 @@
+E:\Selenium course\EntryPoint\Paths\bin\Debug\Paths.exe.config
+E:\Selenium course\EntryPoint\Paths\bin\Debug\Paths.exe
+E:\Selenium course\EntryPoint\Paths\bin\Debug\Paths.pdb
+E:\Selenium course\EntryPoint\Paths\bin\Debug\WebDriver.dll
+E:\Selenium course\EntryPoint\Paths\bin\Debug\WebDriver.Support.dll
+E:\Selenium course\EntryPoint\Paths\bin\Debug\WebDriver.xml
+E:\Selenium course\EntryPoint\Paths\bin\Debug\WebDriver.Support.xml
+E:\Selenium course\EntryPoint\Paths\obj\Debug\Paths.csprojAssemblyReference.cache
+E:\Selenium course\EntryPoint\Paths\obj\Debug\Paths.csproj.CoreCompileInputs.cache
+E:\Selenium course\EntryPoint\Paths\obj\Debug\Paths.csproj.CopyComplete
+E:\Selenium course\EntryPoint\Paths\obj\Debug\Paths.exe
+E:\Selenium course\EntryPoint\Paths\obj\Debug\Paths.pdb

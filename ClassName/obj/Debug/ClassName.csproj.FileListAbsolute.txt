@@ -9,3 +9,4 @@ E:\Selenium course\EntryPoint\ClassName\obj\Debug\ClassName.csproj.CoreCompileIn
 E:\Selenium course\EntryPoint\ClassName\obj\Debug\ClassName.csproj.CopyComplete
 E:\Selenium course\EntryPoint\ClassName\obj\Debug\ClassName.exe
 E:\Selenium course\EntryPoint\ClassName\obj\Debug\ClassName.pdb
+E:\Selenium course\EntryPoint\ClassName\obj\Debug\ClassName.csprojAssemblyReference.cache

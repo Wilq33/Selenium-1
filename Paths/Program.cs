@@ -1,0 +1,62 @@
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using System;
+
+namespace Paths
+{
+    class Program
+    {
+        static void Main()
+        {
+            string url = "http://testing.todvachev.com/selectors/css-path/";
+            string cssPathSelector = "#post-108 > div > figure > img";
+            string xPathSelector = "//*[@id=\"post-108\"]/div/figure/img";
+
+            IWebDriver driver = new ChromeDriver();
+
+            driver.Navigate().GoToUrl(url);
+
+
+            //Elements
+            IWebElement cssPathElement = driver.FindElement(By.CssSelector(cssPathSelector));
+            IWebElement xPathElement = driver.FindElement(By.XPath(xPathSelector));
+
+            if (cssPathElement.Displayed)
+            {
+                GreenMessage("I can see CssPath");
+            }
+            else
+            {
+                RedMessage("I don't see CssPath");
+            }
+
+            if(xPathElement.Displayed)
+            {
+                GreenMessage("I can see XPath");
+            }
+            else
+            {
+                RedMessage("I don't see XPath");
+            }
+
+
+            driver.Quit();
+        }
+
+        //changing color to red
+        private static void RedMessage(string message)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(message);
+            Console.ForegroundColor = ConsoleColor.White;
+        }
+
+        //changing color to green
+        private static void GreenMessage(string message)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(message);
+            Console.ForegroundColor = ConsoleColor.White;
+        }
+    }
+}
