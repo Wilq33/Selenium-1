@@ -56,7 +56,7 @@ class Test
                 GreenMessage("I can see the ID element");
                 Console.WriteLine(elementId.Text);
             }
-           
+
         }
         catch (NoSuchElementException)
         {
@@ -101,9 +101,6 @@ class Test
 
         driver.Quit();
     }
-
-    
-    
 
     static void GreenMessage(string message)
     {
