@@ -30,8 +30,8 @@ namespace Paths
                 {
                     GreenMessage("I can see CssPath");
                 }
-                            }
-            catch(NoSuchElementException)
+            }
+            catch (NoSuchElementException)
             {
                 RedMessage("I don't see CssPath");
             }
@@ -48,7 +48,7 @@ namespace Paths
             {
                 GreenMessage("I can see XPath");
             }
-            
+
             driver.Quit();
         }
 

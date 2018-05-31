@@ -5,11 +5,11 @@ using System.Diagnostics;
 using System.Threading;
 
 class NameSelector
-    {
+{
 
     //Checking if element myName exists
-        static void Main()
-        {
+    static void Main()
+    {
         IWebDriver driver = new ChromeDriver();
 
         driver.Navigate().GoToUrl("http://testing.todvachev.com/selectors/name/");
@@ -32,11 +32,11 @@ class NameSelector
         {
             RedMessage("I don't see the element");
         }
-        
+
 
         Thread.Sleep(3000);
         driver.Quit();
-        }
+    }
 
 
     //changing color to red
@@ -46,7 +46,7 @@ class NameSelector
         Console.WriteLine(message);
         Console.ForegroundColor = ConsoleColor.White;
     }
-    
+
     //changing color to green
     private static void GreenMessage(string message)
     {

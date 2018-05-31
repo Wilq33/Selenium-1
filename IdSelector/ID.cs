@@ -29,9 +29,9 @@ namespace IdSelector
                 {
                     GreenMessage("Yes, I can see the image");
                 }
-            
+
             }
-            catch(NoSuchElementException)
+            catch (NoSuchElementException)
             {
                 RedMessage("I don't see the image");
             }
@@ -56,5 +56,5 @@ namespace IdSelector
         }
     }
 
-   
+
 }
